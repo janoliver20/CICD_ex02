@@ -3,7 +3,6 @@ package main_test
 import (
 	"bytes"
 	"encoding/json"
-	"github.com/janoliver20/CICD_ex02"
 	"github.com/joho/godotenv"
 	"log"
 	"net/http"

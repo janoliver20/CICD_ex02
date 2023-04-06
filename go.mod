@@ -8,4 +8,4 @@ require (
 	github.com/lib/pq v1.10.7
 )
 
-require github.com/doug-martin/goqu/v9 v9.18.0 // indirect
+require github.com/doug-martin/goqu/v9 v9.18.0
