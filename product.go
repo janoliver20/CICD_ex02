@@ -1,4 +1,4 @@
-package CICD_ex02
+package main
 
 import (
 	"database/sql"

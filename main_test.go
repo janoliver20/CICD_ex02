@@ -1,4 +1,4 @@
-package CICD_ex02_test
+package main
 
 import (
 	"bytes"
@@ -12,7 +12,7 @@ import (
 	"testing"
 )
 
-var a main.App
+var a App
 
 func TestMain(m *testing.M) {
 
