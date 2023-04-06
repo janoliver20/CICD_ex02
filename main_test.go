@@ -1,4 +1,4 @@
-package main_test
+package CICD_ex02_test
 
 import (
 	"bytes"
