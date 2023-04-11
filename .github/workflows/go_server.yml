@@ -3,6 +3,13 @@
 
 name: Go
 
+env:
+  GOPATH: ${{ github.workspace }}
+  GOBIN: ${{ github.workspace }}/bin
+defaults:
+  run:
+    working-directory: ${{ env.GOPATH }}/.
+
 on:
   push:
     branches: [ "main" ]
