@@ -24,11 +24,11 @@ jobs:
     - name: Build
       env:
         GOPATH: ${{ github.workspace }}
-        GOROOT: /usr/local/go
+        GOROOT: $HOME/go
       run: go build ./...
 
     - name: Test
       env:
         GOPATH: ${{ github.workspace }}
-        GOROOT: /usr/local/go
+        GOROOT: $HOME/go
       run: go test ./...
