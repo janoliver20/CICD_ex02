@@ -31,6 +31,21 @@ jobs:
       run: |
         go get -v -t -d ./...
         
+    - name: Checkout goqu repository
+      run: |
+        cd ./src/github.com/doug-martin/
+        git clone https://github.com/doug-martin/goqu.git v9
+
+    - name: Checkout godotenv repository
+      run: |
+        cd ./src/github.com/joho/
+        git clone https://github.com/joho/godotenv.git
+
+    - name: Checkout gorilla/mux repository
+      run: |
+        cd ./src/github.com/gorilla/
+        git clone https://github.com/gorilla/mux.git
+        
     - name: Build
       run: go build ./...
 
