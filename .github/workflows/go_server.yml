@@ -12,7 +12,12 @@ on:
 jobs:
 
   build:
+    name: Build
     runs-on: ubuntu-latest
+
+    env:
+      GOPATH: ${{ github.workspace }}
+      GOROOT: /usr/local/go
     steps:
     - uses: actions/checkout@v3
 
