@@ -21,13 +21,14 @@ jobs:
       with:
         go-version: 1.20
         
-    - name: Set up environment variables
-      run: |
-          echo "export GOPATH=${{ github.workspace }}" >> $GITHUB_ENV
-          echo "export GOROOT=/usr/local/go" >> $GITHUB_ENV
-
     - name: Build
-      run: go build -v ./...
+      env:
+        GOPATH: ${{ github.workspace }}
+        GOROOT: /usr/local/go
+      run: go build ./...
 
     - name: Test
-      run: go test -v ./...
+      env:
+        GOPATH: ${{ github.workspace }}
+        GOROOT: /usr/local/go
+      run: go test ./...
