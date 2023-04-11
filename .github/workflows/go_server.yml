@@ -21,11 +21,8 @@ jobs:
       with:
         go-version: 1.20
         
-    - name: Go Mod Init
-      run: go mod init
-        
-    - name: Install packages
-      run: go install -v ./...
+    - name: Go Get
+      run: go get ./...
 
     - name: Build
       run: go build -v ./...
